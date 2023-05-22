@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSafe | Fundacion</title>
+    <link rel="icon" href="{% static 'app/img/PetSafe_LOGO_TM.png' %}">
+    <link rel="stylesheet" href="{% static 'app/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'app/fontawesome-free-6.1.1-web/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/estilo.css' %}">
+</head>
+<body>
+  <header class="bg-danger">
+    <div class="container p-2">
+        <div class="row">
+        <div class="col text-center "><a href="#" class="social-color"><i class="fa-brands fa-facebook-square"></i> Facebook</a></div>
+        <div class="col text-center"><a href="#" class="social-color"><i class="fa-brands fa-instagram-square"></i> Instagram</a></div>
+        <div class="col text-center"><a href="#" class="social-color"><i class="fa-brands fa-twitter-square"></i> Twitter</a></div>
+        </div>
+    </div>    
+</header>
+
+<div class="navcolor">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+          <a href="{% url 'inicioSexionIni' %}" class="navbar-brand"><img src="{% static 'app/img/PetSafe_LOGO_TM.png' %}" alt="" width="75px"></a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                  <a href="{% url 'inicioSexionIni' %}" class="nav-item nav-link" >Inicio</a>
+                  <a href="{% url 'cuenta' %}" class="nav-item nav-link">Mi Cuenta</a>
+                  <a href="{% url 'fundacion' %}" class="nav-item nav-link">Fundacion</a>
+                  <a href="{% url 'tienda' %}" class="nav-item nav-link">Tienda</a>
+              </div>
+              <div class="navbar-nav ms-auto">
+                <a class="btn btn-danger m-3" href="{% url 'index' %}">Cerrar sesion </a>
+                <a href="{% url 'carro' %}"><i class="fa-solid fa-cart-shopping mt-4"></i></a>
+              </div>
+          </div>
+      </div>
+  </nav>
+  </div>
+</div>  
+
+<div>
+  <!--Carrusel-->
+ <div class="bg-white">
+  <div class="container p-1">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'app/img/perros.jpg' %}" class="d-block w-100" style="height: 500px;" alt="...">
+          <div class="carousel-caption d-none d-md-block bgdark">
+            <h5>Cada Aporte cuenta</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'app/img/purina-que-debes-saber-de-los-perros-en-adopcion.jpg' %}" class="d-block w-100" style="height: 500px;" alt="...">
+          <div class="carousel-caption d-none d-md-block bgdark">
+            <h5>Ayudanos a darle hogar a estos animalitos</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'app/img/gatito.jpg' %}" class="d-block w-100" style="height: 500px;" alt="...">
+          <div class="carousel-caption d-none d-md-block bgdark">
+            <h5>Por una mejor vida para estos pequeños amigos</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+ </div>
+  <!--Eslogan-->
+  <div class="color-green">
+    <div class="container">
+      <div class="eslogan p-2">
+        <h4 class="text-dark">"En nuestra fundación de mascotas, trabajamos incansablemente para darles una vida digna y llena de amor a aquellos que no pueden hablar por sí mismos. Cada donación nos acerca un paso más a nuestro objetivo: brindar refugio, cuidado médico y encontrar hogares responsables para estos seres llenos de lealtad y cariño. Únete a nuestra causa y ayuda a crear un mundo donde cada mascota pueda experimentar el amor incondicional que tanto merecen. ¡Tu apoyo marca la diferencia en sus vidas!"</h4>
+        <h4 class="text-dark">-Fundacion  amor animal</h4>
+      </div>
+    </div>
+  </div>
+  <!--Ultimos Productos-->
+
+
+<!--Fundacion-->
+<div class="bgfundacion">
+  <div class="container">
+    <div class="row p-2">
+      <div class="col">
+        <img src="{% static 'app/img/buscarhogar.png' %}" class="w-100 rounded-pill" alt="">
+      </div>
+      <div class="col position-relative">
+        <div class="position-absolute top-50 start-50 translate-middle rounded fundaciontext p-3">
+          <button class="btn btn-success"><a href="{% url 'suscripcion' %}" style="color: white;">Suscribirse</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Suscripcion-->
+<div>
+  <div class="container">
+    <div class="row p-5">
+      <div class="col">
+        <h2>INSCRÍBETE AQUÍ Y RECIBE NOVEDADES, OFERTAS Y MUCHAS SORPRESAS</h2>
+      </div>
+      <div class="col">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <label for="inputSuscripcion" class="col-form-label">Correo</label>
+          </div>
+          <div class="col-auto">
+            <input type="email" id="inputSuscripcion" class="form-control">
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-primary">Registrar</button>
+          </div>
+          <script>
+            const inputSuscripcion = document.getElementById('inputSuscripcion');
+            
+            inputSuscripcion.addEventListener('keydown', (event) => {
+              if (event.key === 'Enter') {
+                inputSuscripcion.value = '';
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div>
+    <iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.2588919326786!2d-70.5816459272289!3d-33.59858657333113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d7037854df81%3A0x893f58a1479b8f82!2sDuoc%20UC%3A%20Sede%20Puente%20Alto!5e0!3m2!1ses-419!2scl!4v1683595330130!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+
+
+
+
+<!-- Modal inicio de sesion -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Iniciar sesion</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div style="text-align: center;">
+            <form action="inicioSexionIni.html" method="GET">
+            <div class="form-group"> <!--Form-group llama al estilo de bootstrap-->
+                <label for="txtUser">Usuario</label>
+                <input type="text" class="form-control" id="txtUser" name="txtUser" placeholder="Ej:username">
+                <!--Form-control para aplicar el estilo-->
+            </div>
+            <div class="form-group">
+                <label for="txtPass">Contraseña</label>
+                <input type="password" class="form-control" id="txtPass" name="txtPass" placeholder="Ej: password">
+            </div>
+
+
+            <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-success">
+            <input type="reset" id="btnLimpiar" name="btnLimpiar" class="btn btn-danger">
+        </form>
+        </div>
+    </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" >
+          <a class="nav-link" href="{% url 'formularioCrearCuenta' %}"  style="color: white;">Crear cuenta</a>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="main-footer">
+  <div class="footer_section">
+    <h2 class="footer_title">Acerca de</h2>
+    <p class="footer_txt">Tienda especialista en productos para mascotas,con el fin de ayudar a una fundación sin fines de lucro.</p>
+  </div>
+  <div class="footer_section">
+    <h2 class="footer_title">Ubicación :</h2>
+    <p class="footer_txt">Avenida Concha Y Toro, Av. San Carlos 1340, Puente Alto, Región Metropolitana</p><a href="https://goo.gl/maps/KCAv6xxC2q2qp2in8?coh=178571&entry=tt"></a>
+    <h2 class="footer_title">Contacto</h2>
+    <p class="footer_txt">Teléfono : +56 9 12345678</p>
+    <p class="footer_txt">Correo : PetSafe@gmail.com</p>
+  </div>
+  <div class="footer_section">
+    <h2 class="footer_title">Enlaces rapidos</h2>
+    <a href="{% url 'inicioSexionIni' %}" class="footer_link" >Inicio</a>
+    <a href="{% url 'cuenta' %}" class="footer_link">Mi Cuenta</a>
+    <a href="{% url 'fundacion' %}" class="footer_link">Fundacion</a>
+    <a href="{% url 'tienda' %}" class="footer_link">Tienda</a>
+  </div>
+  <div class="footer_section">
+    <h2 class="footer_title">Suscríbete a tus ofertas</h2>
+    <p class="footer_txt">Al suscribirse a nuestra lista de correo, siempre recibirá nuestras últimas noticias y actualizaciones..</p>
+    <input type="email" class="footer_input" placeholder="Ingese su correo" id="email-input">
+  </div>
+  <script>
+    const emailInput = document.getElementById('email-input');
+    
+    emailInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        emailInput.value = '';
+      }
+    });
+  </script>
+  <p class="copy">© 2023 PetSafe. Reservados todos los derechos | Diseño por Waldsaikou</p>
+</footer>
+      
+
+    <script src="{% static 'app/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
